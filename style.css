@@ -1,0 +1,115 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Red+Hat+Display:wght@500;700;900&display=swap');
+:root{
+    /* ### Primary */
+--Pale-blue: hsl(225, 100%, 94%);
+--Bright-blue: hsl(245, 75%, 52%);
+
+
+/* ### Neutral */
+--Very-pale-blue: hsl(225, 100%, 98%);
+--Desaturated-blue: hsl(224, 23%, 55%);
+--Dark-blue : hsl(223, 47%, 23%);
+}
+body{
+ background-image: url(images/pattern-background-desktop.svg);
+ background-repeat: no-repeat;
+ background-size: contain;
+ background-color: var(--Pale-blue);
+ font-family:  "Red Hat Display" sans-serif;
+}
+p{
+   font-size: 16px;
+}
+.container{
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+max-width: 450px;
+border-radius: 20px;
+background-color: var(--Very-pale-blue);
+overflow: hidden;
+}
+@media(max-width:375px){
+    .container{
+        max-width: 410px;
+    }
+}
+main{
+     padding: 20px;
+}
+main h2{
+    display: flex;
+    justify-content: center;
+    color: var(--Dark-blue);
+    margin: 20px;
+    font-weight: 900;
+}
+main .first-paragrph{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin:  0 75px 30px;
+     color: var(--Desaturated-blue);
+     text-align: center;
+}
+main .box-middle{
+    display: flex;
+    justify-content: space-around;
+}
+main .middle-part{
+    margin-left: -65px ;
+}
+main .middle-part .first-one{
+    color: var(--Dark-blue);
+     font-weight: 700;
+     margin-bottom: 7px;
+}
+main .middle-part .the-price{
+    color: var(--Desaturated-blue);
+}
+main .right-part a {
+    line-height: 30px;
+    color: var(--Dark-blue);
+    transition: 0.5s ease;
+}
+main .right-part a:hover{
+    cursor: pointer;
+    opacity: 0.6;
+    text-decoration: none;
+}
+main .confirm-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Bright-blue);
+    width: 80%;
+    margin:  40px auto 30px;
+    height: 45px;
+    color: var(--Pale-blue);
+    font-weight: 500;
+    border-radius: 10px;
+    transition: 0.3s ease;
+}
+main .confirm-btn:hover{
+    cursor: pointer;
+    opacity: 0.6;
+}
+main .cancle-btn{
+    color: var(--Desaturated-blue);
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+main .cancle-btn:hover{
+    color: var(--Dark-blue);
+    cursor: pointer;
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
